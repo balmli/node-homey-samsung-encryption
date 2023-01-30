@@ -1,0 +1,34 @@
+{
+    "name": "@balmli/homey-samsung-encryption",
+    "version": "1.0.0",
+    "description": "Encryption for older Samsung TVs",
+    "main": "dist/lib/index.js",
+    "type": "commonjs",
+    "engines": {
+        "node": ">=16.0.0"
+    },
+    "scripts": {
+        "prebuild": "del dist/",
+        "build": "cpy lib/ package.json dist",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "node",
+        "samsung",
+        "encryption"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/balmli/node-homey-samsung-encryption.git"
+    },
+    "author": "bjornar.almli@gmail.com",
+    "bugs": {
+        "url": "https://github.com/balmli/node-homey-samsung-encryption/issues"
+    },
+    "homepage": "https://github.com/balmli/node-homey-samsung-encryption#readme",
+    "license": "ISC",
+    "devDependencies": {
+        "cpy-cli": "^4.2.0",
+        "del-cli": "^3.0.0"
+    }
+}
